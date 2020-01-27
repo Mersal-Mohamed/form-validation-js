@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class='login'>
+
+        <!--Form side-->
+        <div class="form">
+            <div class="steps">
+                <span class='step'>Step 1 of 3</span>
+                <span class='ball activeBall'></span>
+                <span class='ball'></span>
+                <span class='ball'></span>
+            </div>
+            <div class="formHead">
+                <h2>
+                    Let's set up your account
+                </h2>
+                <p>
+                    Already have an account? <a>Sign in</a>
+                </p>
+            </div>
+
+            <form name='form' novalidate>
+
+                <div class="input-container">
+                    <input type="text" name="name" id="name" placeholder="Your name" onfocus="focusInput(event)">
+                    <span class="top" id='nametop'>Your name</span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" placeholder="Email address" onfocus="focusInput(event)">
+                    <span class="top" id='emailtop'>Email address</span>
+                    <span class="emailerror" id='emailerror'>Please enter a valid email address</span>
+
+                </div>
+                <div class="select">
+                    <select id='select' name='select'>
+                        <option value="description" disabled selected>I would describe my user type as</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="marketing">Marketer</option>
+                    </select>
+                    <img src="images/download.png" alt="downarrow" id='downarrow' width="11px" height="11px">
+                    <span class="selecterror">
+                        Please select your field  
+                    </span>
+                </div>
+             
+
+                <div class="input-container">
+                    <input type="password" name="password" id="password" placeholder="Password" onfocus="focusInput(event)">
+                    <small id='eight'>Minimum 8 charachters</small>
+                    <span class="top" id='passwordtop'>Password</span>
+                    <img src="images/eye.png" alt="eye" id='eye' width="11px" height="11px">
+                </div>
+              
+                <button id='button' type="submit">Next</button>
+
+            </form>
+            <span class='agree'>By clicking the 'Next' button, you agree to creating a free account, and to <a>Terms of Service
+                </a> and <a>Privacy Policy</a></span>
+
+        </div>
+
+        <!--Introduction side-->
+        <div class='blue'>
+            <h2>Dummy Heading</h2>
+            <p>
+                Lorem ipsum, dolor sit amet, consectetur <br/>
+                adipisicing elit, sed do eiusmod tempor <br/>
+                incididunt ut labore et dolore magna <br/>
+                aliqua.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
